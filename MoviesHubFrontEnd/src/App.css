@@ -1,0 +1,209 @@
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin-bottom: 60px; /* Margin bottom by footer height */
+    background: #0c0b00; /* Old browsers */
+}
+.input-group-addon {
+    cursor: pointer;
+}
+.movieList {
+    margin-top: 20px;
+}
+.movieList > .movieBlock {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.loggedInUser {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: block;
+    color: rgba(255, 0, 0, 0.45);
+}
+.row.display-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.display-flex > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn {
+    outline: 0;
+    border: none;
+    border-top: none;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: inset 2px -3px rgba(0, 0, 0, 0.15);
+}
+.btn:focus {
+    outline: 0;
+    -webkit-outline: 0;
+    -moz-outline: 0;
+}
+.filterButton {
+    margin: 17px 0px;
+    background: #31dcf7;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.fullscreen_bg nav {
+    background-color: rgba(180, 48, 48, 0.253);
+    border-color: rgba(223, 33, 33, 0);
+}
+.nav li {
+    cursor: pointer;
+    font-weight: bolder;
+}
+.nav li:hover {
+    font-weight: bolder;
+}
+/* .searchContainer input{
+  box-shadow: 1px 1px 8px;
+  border-radius: 2px;
+  border: 1px solid rgba(169, 68, 66, 0);
+} */
+.searchbtn {
+    background: #337ab7;
+    border: 1px solid #337ab7;
+    color: white;
+}
+.form-signin {
+    max-width: 280px;
+    padding: 15px;
+    margin: 0 auto;
+    margin-top: 10em;
+}
+.form-signin .form-signin-heading,
+.form-signin {
+    margin-bottom: 10px;
+}
+.form-signin .form-control {
+    position: relative;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: none;
+    border-left-style: solid;
+    border-color: #000;
+}
+
+.form-signin-heading {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px; /* Set the fixed height of the footer here */
+    line-height: 60px; /* Vertically center the text there */
+    background-color: #37140c;
+    border-color: #37140c;
+    text-align: center;
+}
+.navbar-brand {
+    color: #deb522 !important;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.votesBlocks {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.voteBack {
+    background-color: transparent;
+    border: none;
+}
+
+.panel-body {
+    height: 400px;
+    text-align: -webkit-center;
+}
+.img-responsive {
+    height: -webkit-fill-available;
+}
+
+.panel-success > .panel-heading {
+    color: white;
+    background-color: #37140c;
+}
+
+.panel-title {
+    font-size: 20px;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: #337ab7;
+    font-size: 18px;
+}
+
+.btn-success:hover {
+    text-decoration: none;
+}
